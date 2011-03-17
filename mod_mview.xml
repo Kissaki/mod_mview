@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>mod_mview</name>
+	<author>KCode</author>
+	<creationDate>2011</creationDate>
+	<authorUrl>http://kcode.de</authorUrl>
+	<version>1.6.0</version>
+	<description>Joomla module for MView</description>
+	<files>
+		<folder>tmpl</folder>
+		<filename>mod_mview.php</filename>
+		<filename>mod_mview.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="jsoncallbackurl"
+					type="text"
+					label="CallbackURL"
+					description="URL to the json callback. Example: http://mumble.example.com/?view=json&amp;serverId=1&amp;callback=?">
+				</field>
+				<field
+					name="refreshinterval"
+					type="text"
+					default="30"
+					label="Refresh Interval"
+					description="">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
