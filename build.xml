@@ -4,6 +4,7 @@
 	<property name="dist" value="_dist" />
 
 	<target name="makepackage" description="make package">
+		<mkdir dir="${dist}" />
 		<delete file="${dist}/mod_mview.zip" quiet="true" />
 		<zip destfile="${dist}/mod_mview.zip">
 			<fileset dir="." includes="mod_mview.php,mod_mview.xml,tmpl/*" />
